@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Animate.css library -->
+        <link rel="stylesheet" href="assets/styles/animatecss/animate.css">
+
+        <!-- Your custom animations-->
+        <link rel="stylesheet" href="assets/styles/customanimations.css">
+    </head>
+    <body>
+
+        <!--Simple sentence-->
+        <header data-anijs="if: mouseover, do: hinge animated, to: #main">
+            If mouseover myself, do hinge animation, to #main
+        </header>
+
+        <!--Using $toggleClass -->
+        <div id="main" data-anijs="if: click, do: $toggleClass red">
+            If click myself, do toggleClass red to myself
+        </div>
+
+
+        <!-- AniJS core library-->
+        <script src="js/anijs/anijs-min.js"></script>
+
+        <!-- Include to use $addClass, $toggleClass or $removeClass -->
+        <script src="js/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+
+        <!-- The scrollreveal helper
+        <script src="js/anijs/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
+        -->
+    </body>
+</html>
